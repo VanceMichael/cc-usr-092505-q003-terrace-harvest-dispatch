@@ -1,10 +1,11 @@
 {
   "name": "terrace-harvest-dispatch",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "build": "node --check src/domain.js"
+    "build": "node --check src/domain.js && node --check src/state.js && node --check src/store.js && node --check src/intervals.js && node --check src/planner.js && node --check src/service.js && node --check src/queries.js && node --check src/clock.js && node --check examples/demo.mjs",
+    "demo": "node examples/demo.mjs"
   }
 }
